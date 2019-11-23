@@ -1,0 +1,95 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> Feedbacks </title>
+	<link rel="stylesheet" type="text/css" href="css.css" src="myscript.js">
+</head>
+<body style="padding: 20px" style="margin: 100%">
+<h1 class="title"><u><b> Welcome To Feedbacks </b></u></h1>
+<div class="tabContainer">
+	<div class="buttonContainer">
+		<button onclick="showPanel(0,'#808080')" >Student</button>
+		<button onclick="showPanel(1,'#4caf50')">Faculty</button>
+		<button onclick="showPanel(2,'#2196f3')">Admin</button>
+	</div>
+
+	<div class="tabPanel">
+		<div class="login-page">
+			<div class="form">
+				<form class="register-form">
+					<button><a href="Create.html">Create</a></button>
+					<p class="message">Already Registerd? <a href="#"> Login</a></p>
+				</form>
+				<form class="Login-form">
+					<input type="text" placeholder="user name"/>
+					<input type="text" placeholder="password"/>
+					<button>Login</button>
+					<p class="message">Not Registerd? <a href="#">Register</a></p>
+				</form>
+			</div>
+		</div>
+		<script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+			<script>
+				$('.message a').click(function(){
+				$('form').animate({height: "toggle" , opacity: "toggle"}, "slow");
+				});
+			</script>
+	</div>
+
+	<div class="tabPanel">
+		<div class="login-page">
+			<div class="form">
+				<form class="register-form">
+					<input type="text" placeholder="user name"/>
+					<input type="text" placeholder="password"/>
+					<input type="text" placeholder="email-ID"/>
+					<button>Create</button>
+					<p class="messagea">Already Registerd? <a href="#"> Login</a></p>
+				</form>
+				<form class="Login-form">
+					<input type="text" placeholder="user name"/>
+					<input type="text" placeholder="password"/>
+					<button>Login</button>
+						<p class="messagea">Not Registerd? <a href="#">Register</a></p>
+				</form>
+			</div>
+		</div>
+		<script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+			<script>
+				$('.messagea a').click(function(){
+				$('form').animate({height: "toggle" , opacity: "toggle"}, "slow");
+				});
+			</script>
+	</div>
+
+	<div class="tabPanel">
+		<div class="login-page">
+			<div class="form">
+				<form class="register-form">
+					<input id="name" type="text" placeholder="user name"/>
+					<input type="text" placeholder="password"/>
+					<input type="text" placeholder="email-ID"/>
+					<button onclick="registerStudent()">Sign up</button>
+					<p class="messageb">Already Registerd? <a href="#">Login</a></p>
+				</form>
+				<form class="Login-form">
+					<input type="text" placeholder="user name"/>
+					<input type="text" placeholder="password"/>
+					<button>Login</button>
+					<p class="messageb">Not Regstred? <a href="#">Register</a></p>
+				</form>
+			</div>
+		</div>
+		<script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+			<script>
+				$('.messageb a').click(function(){
+				$('form').animate({height: "toggle" , opacity: "toggle"}, "slow");
+				});
+			</script>
+	</div>
+</div>
+
+<script src="myscript.js"></script>
+<script src="JavaScript.js"></script>
+</body>
+</html>

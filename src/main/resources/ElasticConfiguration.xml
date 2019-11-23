@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- <context:component-scan base-package="com.in28minutes.spring.basics"/> -->
+<!--  
+	<bean id="Index_Name" class="com.example.demo.ElasticConfiguration">
+		<property name = "twitter">
+			<bean id = "documentName" class = "com.example.demo.ElasticColumnMapping">
+				<constructor-arg name = "indexName" value="twitter" />
+				<constructor-arg name = "documentName" value="tweet" />
+				<constructor-arg name="columnsList" >
+					<map>
+						<entry key="Name" value="String" />
+						<entry key="Message" value="String" />
+						<entry key="MobileNumber" value="Long" />
+					</map>
+				</constructor-arg>
+			</bean>
+		</property>
+		<property name = "facebook">
+			<bean id = "Document_Name" class = "com.example.demo.ElasticColumnMapping">
+				<constructor-arg name = "indexName" value="facebook" />
+				<constructor-arg name = "documentName" value="chatting" />
+				<constructor-arg name="columnsList" >
+					<map>
+						<entry key="ProfileName" value="String" />
+						<entry key="Chats" value="String" />
+						<entry key="Frineds" value="String" />
+					</map>
+				</constructor-arg>
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="indexName" class="java.lang.String">
+		<constructor-arg value="stringBean2" />
+	</bean>
+-->
+	<bean id="Index_Names" class="com.Project.FeedbackManagementSystem.ConfHandler.ElasticConfiguration">
+		<property name = "student_basic_details">
+			<bean id = "Document_Name" class = "com.Project.FeedbackManagementSystem.ConfHandler.ElasticColumnMapping">
+				<constructor-arg name = "indexName" value="student_basic_details" />
+				<constructor-arg name = "documentName" value="student_basic_details_doc" />
+				<constructor-arg name = "primaryField" value="studentId" />
+				<constructor-arg name="columnsList" >
+					<map>
+						<entry key="studentId" value="String" />
+						<entry key="studentCollege" value="String" />
+						<entry key="studentFirstName" value="String" />
+						<entry key="studentLastName" value="String" />
+						<entry key="studentMiddleName" value="String" />
+						<entry key="studentEmailId" value="String" />
+						<entry key="studentMobileNumber1" value="Long" />
+						<entry key="studentMobileNumber2" value="Long" />
+						<entry key="studentAddressState" value="String" />
+						<entry key="studentAddressCity" value="String" />						
+						<entry key="studentAddressLocation" value="String" />
+						<entry key="studentPincode" value="Integer" />
+						<entry key="studentCountry" value="String" />
+						<entry key="studentCourse" value="String" />
+						<entry key="studentBranch" value="String" />
+						<entry key="studentSemester" value="String" />  
+					</map>
+				</constructor-arg>
+			</bean>
+		</property>
+	</bean>
+
+</beans>

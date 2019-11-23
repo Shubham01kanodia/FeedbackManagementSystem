@@ -2,12 +2,21 @@
 <head>
 <title>Sample Application</title>
 </head>
-<script src="studentscript.js"></script>
+<script src="JavaScript.js"></script>
 <body>
-<h1>Testing app</h1>
-	<input id="testInput" type="text">
-	<button type="button" onclick="showMessage()">click here </button>
-<h1 id="displayMessage"></h1>
+<h1>Feedback Management System</h1>
+	<div id="registerStudentDiv">
+		
+			<input id="firstName" type="text" placeholder="First Name"/><br>
+			<input id="middleName" type="text" placeholder="Middle name"/><br>
+			<input id="lastName" type="text" placeholder="Last Name"/><br>
+			<input id="branch" type="text" placeholder="Branch"/><br>
+			<input id="semester" type="text" placeholder="semester"/><br>
+			<input id="emailId" type="text" placeholder="email-ID"/><br>
+			<input id="password" type="text" placeholder="strong - password"/><br>
+			<button onclick="registerStudent()">Submit</button>
+		
+	</div>
 </body>
 
 </html>

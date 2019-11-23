@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feedback Management System</title>
+</head>
+<script src="JSPages\studentHandler.js"></script>
+<body>
+	<div id="home_page">
+		<h2>Welcome to Feedback Management System</h2>
+		<h4 onclick="loginStudentShow()">Student Login</h4>
+		<h4>Teacher Login</h4>
+		<h4>Admin Login</h4>
+	</div>
+	<div id="register_student_div" hidden="true">
+		<form>
+			<input id="studentFirstName" type="text" placeholder="First Name"/><br>
+			<input id="studentMiddleName" type="text" placeholder="Middle Name"/><br>
+			<input id="studentLastName" type="text" placeholder="Last Name"/><br>
+			<input id="studentId" type="text" placeholder="Enrollment ID"/><br>
+			<input id="studentCourse" type="text" placeholder="Course"/><br>
+			<input id="studentBranch" type="text" placeholder="Branch"/><br>
+			<input id="studentSemester" type="text" placeholder="Semester"/><br>
+			<input id="studentCollege" type="text" placeholder="College"/><br>
+			<input id="studentEmailId" type="text" placeholder="Email ID"/><br>
+			<input id="studentMobileNumber1" type="number" placeholder="Mobile Number 1"/><br>
+			<input id="studentMobileNumber2" type="number" placeholder="Mobile Number 2"/><br>
+			<input id="studentAddressLocation" type="text" placeholder="Address"/><br>
+			<input id="studentAddressCity" type="text" placeholder="City"/><br>
+			<input id="studentAddressState" type="text" placeholder="State"/><br>
+			<input id="studentPincode" type="number" placeholder="Pincode"/><br>
+			<input id="studentCountry" type="text" placeholder="Country"/><br>
+			<button onclick="registerStudent()">Submit</button>
+		</form>
+	</div>
+	<div id="register_admin_div" hidden="true"></div>
+	<div id="register_teacher_div" hidden="true"></div>
+	<div id="login_student_div" hidden="true">
+		<input id="studentLoginId" type="text" placeholder="Enrollment ID"/>
+		<input id="studentPassword" type="text" placeholder="Password"/>
+		<button onclick="loginStudent()">Submit</button>
+		<button onclick="registerStudentShow()">Register Student</button>
+	</div>
+	<div id="login_admin_div" hidden="true"></div>
+	<div id="login_teacher_div" hidden="true"></div>
+</body>
+</html>
